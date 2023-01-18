@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <!-- Sidebar Mobile -->
+    <div class="sidebar" id="sidebar">
+      <div class="container">
+        <ul>
+          <a href="#" class="sidebar-close" onclick="closeNav()"
+            ><img class="icon-close" src="images/icon-close.svg" alt=""
+          /></a>
+          <li
+            class="product-mobile"
+            id="product-mobile"
+            onclick="toggleFirstAccordion(); turnArrow1();"
+          >
+            <a href="#"
+              >Product <img src="images/icon-arrow-dark.svg" alt=""
+            /></a>
+          </li>
+          <div class="accordion-1" id="accordion-1">
+            <ul>
+              <li>
+                <a href="#">Overview</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Marketplace</a>
+              </li>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">Integrations</a>
+              </li>
+            </ul>
+          </div>
+          <li
+            class="company-mobile"
+            id="company-mobile"
+            onclick="toggleSecondAccordion(); turnArrow2();"
+          >
+            <a href="#"
+              >Company <img src="images/icon-arrow-dark.svg" alt=""
+            /></a>
+          </li>
+          <div class="accordion-2" id="accordion-2">
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Team</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <li
+            class="connect-mobile"
+            id="connect-mobile"
+            onclick="toggleThirdAccordion(); turnArrow3();"
+          >
+            <a href="#"
+              >Connect <img src="images/icon-arrow-dark.svg" alt=""
+            /></a>
+          </li>
+          <div class="accordion-3" id="accordion-3">
+            <ul>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Newsletter</a>
+              </li>
+              <li>
+                <a href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+        <div class="btns-mobile">
+          <button class="login-mobile">Login</button>
+          <button class="signup-mobile">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav Hero -->
+    <section class="nav-hero">
+      <div class="image-overlay-mobile">
+        <img src="images/bg-pattern-intro-mobile.svg" alt="" />
+      </div>
+      <div class="image-overlay-desktop">
+        <img src="images/bg-pattern-intro-desktop.svg" alt="" />
+      </div>
+
+      <!-- Navbar Desktop -->
+      <nav class="navbar-desktop">
+        <ul>
+          <a class="logo" href="#">
+            <img src="images/logo.svg" alt="" />
+          </a>
+          <li class="gen-list product">
+            <a href="#"
+              >Product <img src="images/icon-arrow-light.svg" alt=""
+            /></a>
+            <div class="drop-down drop-down-1">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </div>
+          </li>
+          <li class="gen-list company">
+            <a href="#"
+              >Company <img src="images/icon-arrow-light.svg" alt=""
+            /></a>
+            <div class="drop-down drop-down-2">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
+          </li>
+          <li class="gen-list connect">
+            <a href="#"
+              >Connect <img src="images/icon-arrow-light.svg" alt=""
+            /></a>
+            <div class="drop-down drop-down-3">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li><a class="login-desktop" href="#">Login</a></li>
+          <li><a class="signup-desktop" href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navbar Mobile -->
+      <nav class="navbar-mobile">
+        <ul class="logo-hamburger">
+          <li>
+            <a href="#">
+              <img class="logo" src="images/logo.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="openNav()">
+              <img
+                class="icon-hamburger"
+                src="images/icon-hamburger.svg"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hero Container -->
+      <div class="hero-container">
+        <h1>A modern <br />publishing platform</h1>
+        <p>Grow your audience and build your <br />online brand</p>
+        <div class="hero-btns">
+          <button>Start for Free</button>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features 1 -->
+    <section class="features-1">
+      <div class="container">
+        <h1>Designed for the future</h1>
+        <div class="sub-container">
+          <div class="features-1-imgs">
+            <div class="ill-editor-mobile">
+              <img src="images/illustration-editor-mobile.svg" alt="" />
+            </div>
+            <div class="ill-editor-desktop">
+              <img src="images/illustration-editor-desktop.svg" alt="" />
+            </div>
+          </div>
+          <div class="features-1-txt">
+            <h1>
+              Introducing an<br />
+              extensible editor
+            </h1>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+            <h1>
+              Robust content<br />
+              management
+            </h1>
+            <p>
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you're in full control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feautures 2 -->
+    <div class="ill-phones">
+      <img src="images/illustration-phones.svg" alt="" />
+    </div>
+    <section class="features-2">
+      <div class="bg-pattern-circles">
+        <img src="images/bg-pattern-circles.svg" alt="" />
+      </div>
+      <div class="container">
+        <h1>
+          State of the Art<br />
+          Infrastructure
+        </h1>
+        <p>
+          With reliability and speed in mind, worldwide data centers provide the
+          backbone for ultra-fast connectivity. This ensures your site will load
+          instantly, no matter where your readers are, keeping your site
+          competitive.
+        </p>
+      </div>
+    </section>
+
+    <!-- Feautures 3 -->
+    <section class="features-3">
+      <div class="container">
+        <div class="features-3-imgs">
+          <div class="ill-laptop-mobile">
+            <img src="images/illustration-laptop-mobile.svg" alt="" />
+          </div>
+          <div class="ill-laptop-desktop">
+            <img src="images/illustration-laptop-desktop.svg" alt="" />
+          </div>
+        </div>
+        <div class="features-3-txt">
+          <h1>Free, open, simple</h1>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <h1>Powerful tooling</h1>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <a href="#">
+          <img class="logo" src="images/logo.svg" alt="" />
+        </a>
+        <div class="product footer-sections">
+          <ul>
+            <h4><a href="#">Product</a></h4>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="company footer-sections">
+          <ul>
+            <h4><a href="#">Company</a></h4>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="connect footer-sections">
+          <ul>
+            <h4><a href="#">Connect</a></h4>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

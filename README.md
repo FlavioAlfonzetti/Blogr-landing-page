@@ -5,7 +5,7 @@ This project was created using HTML, SCSS and JS. The responsiveness was kept th
 <br>
 <br>
 <p align="left">
-<img src="https://user-images.githubusercontent.com/107587774/213169596-54568002-4f31-4cf3-8acc-078abd208034.png">
+<img src="https://user-images.githubusercontent.com/107587774/213169596-54568002-4f31-4cf3-8acc-078abd208034.png" | width=200>
 </p>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/107587774/213169603-92d226ff-515a-4a16-8ace-491f1e48fee3.png">
